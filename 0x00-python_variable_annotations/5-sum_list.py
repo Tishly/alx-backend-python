@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
+from typing import List
 
 """
 An annotated function
 """
 
 
-def sum_list(input_list: list[float]) -> float:
+def sum_list(input_list: List[float]) -> float:
     """
     A function that returns th sum of a list
     """
