@@ -1,7 +1,12 @@
 #!/usr/bin/env/ python3
-"""A python file to demonstrate annotation"""
+
+'''
+    Annotation of simple variables
+'''
 
 
 def add(a: float, b: float) -> float:
-    """A function that returns the sum of two floats"""
+    '''
+        A function that returns the sum of two floats
+    '''
     return a + b
