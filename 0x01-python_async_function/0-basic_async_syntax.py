@@ -11,10 +11,10 @@ async def wait_random(max_delay = 10):
     an asynchronous coroutine that takes in an integer argument,
     waits some seconds and returns it
     """
-    await asyncio.sleep(random.uniform(0, 11))
-    return max_delay
+    delay = random.uniform(0, max_delay)
+    await asyncio.sleep(delay)
+    return delay
 
 
 if __name__ == "__main__":
     asyncio.run(wait_random())
-
