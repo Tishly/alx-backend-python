@@ -3,14 +3,14 @@
 Execute multiple coroutines at the same time
 """
 import asyncio
-import random
+from typing import List
 from asyncio import gather
 
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list[float]:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     A function that exxecutes multiple coroutines by calling 'wait_random',
     Args:
